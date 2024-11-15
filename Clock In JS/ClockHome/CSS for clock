@@ -1,0 +1,14 @@
+#clock {
+    font-size: 175px;
+}
+
+.clock {
+    border: 1px solid #606060;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: url('C:/Users/boodh/hw/Clock In JS/ClockHome/Photos for Clock/ChickenJoe.jpeg');
+    background-size: auto;
+    background-position: center;
+    background-color: #222222;
+}

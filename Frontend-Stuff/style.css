@@ -1,0 +1,43 @@
+html, body, h1, h2, h3, p, ul, ol, li, a{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+#header{
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+#header img {
+  width: 20%;
+}
+
+#header .nav-links a{
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 0px 40px 0px;
+}
+
+
+
+body{
+  background-color: yellow;
+}
+
+
+/* #main-content{
+  background-color: pink;
+} */
+
+
+ul li {
+  list-style-type: none;
+}
+
+/* .city{
+  background-color: pink;
+} */

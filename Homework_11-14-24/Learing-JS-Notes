@@ -1,0 +1,2259 @@
+
+// alert('ryan')
+
+// let age=23;
+
+// //console.log(age)
+
+// document.write(age)
+
+// // JavaScript Let
+
+// //var lets you redeclared varibles 
+// var x =0;
+
+// var x = 2;
+
+// //Scope	    Redeclare	Reassign	Hoisted	Binds this
+// // var	    No	        Yes	        Yes	Yes	Yes
+// // let	    Yes	        No	        Yes	No	No
+// // const	Yes	        No	        No	No	No
+
+// // The const keyword was introduced in ES6 (2015)
+
+// // Variables defined with const cannot be Redeclared
+
+// // Variables defined with const cannot be Reassigned
+
+// // Variables defined with const have Block Scope
+
+// const PI = 3.141592653589793;
+// PI = 3.14;      // This will give an error
+// PI = PI + 10; // This will also give an error
+
+// // const PI = 3.14159265359; // this is right for js
+
+// // const PI;//Incorrect
+// PI = 3.14159265359; //Incorrect
+
+// // Constant Arrays
+
+// // You can create a constant array:
+// const cars = ["Saab", "Volvo", "BMW"];
+
+// // You can change an element:
+// cars[0] = "Toyota";
+
+// // You can add an element:
+// cars.push("Audi");
+
+// //But can't reassign array
+// const cars = ["Saab", "Volvo", "BMW"];
+
+// cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+
+// //Constant Objects
+
+// // You can create a const object:
+// const car = {type:"Fiat", model:"500", color:"white"};
+
+// // You can change a property:
+// car.color = "red";
+
+// // You can add a property:
+// // car.owner = "Johnson";
+
+// // But you can NOT reassign the object:
+
+// // Example
+// // const car = {type:"Fiat", model:"500", color:"white"};
+
+// // car = {type:"Volvo", model:"EX60", color:"red"};// ERROR
+
+// // JavaScript Operators
+
+// // Examples:
+// // The Assignment Operator = assigns values
+
+// // The Addition Operator + adds values
+
+// // The Multiplication Operator * multiplies values
+
+// // The Comparison Operator > compares values
+
+// // Assign the value 5 to x
+// // let x = 5;
+// // Assign the value 2 to y
+// // let y = 2;
+// // Assign the value x + y to z:
+// // let z = x + y;
+
+// // JavaScript Arithmetic Operators
+
+// // Operator	Description
+// // +	        Addition
+// // -	        Subtraction
+// // *	        Multiplication
+// // **	        Exponentiation (ES2016)
+// // /	        Division
+// // %	        Modulus (Remainder)
+// // ++	        Increment
+// // --	        Decrement
+
+// //These are the operators that you are going to use for numbers (literals or varibles)
+
+
+// // Operators and Operands
+// // The numbers (in an arithmetic operation) are called operands.
+
+// // The operation (to be performed between the two operands) is defined by an operator.
+
+// // Operand	Operator	Operand
+// //   100	    +	       50
+
+// // JavaScript Assignment Operators
+// // Assignment operators assign values to JavaScript variables.
+
+// // Operator	    Example	        Same As
+// // =	        x = y	        x = y
+// // +=	        x += y	        x = x + y
+// // -=	        x -= y	        x = x - y
+// // *=	        x *= y	        x = x * y
+// // /=	        x /= y	        x = x / y
+// // %=	        x %= y	        x = x % y
+// // **=	        x **= y	        x = x ** y
+
+// // JavaScript Data Types
+
+// // // Numbers:
+// // let length = 16;
+// // let weight = 7.5;
+
+// // // Strings:
+// // let color = "Yellow";
+// // let lastName = "Johnson";
+
+// // // Booleans
+// // let x = true;
+// // let y = false;
+
+// // // Object:
+// // const person = {firstName:"John", lastName:"Doe"};
+
+// // // Array object:
+// // const cars = ["Saab", "Volvo", "BMW"];
+
+// // // Date object:
+// // const date = new Date("2022-03-25");
+
+// // JavaScript Types are Dynamic
+// // JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+// // let x;       // Now x is undefined
+// // x = 5;       // Now x is a Number
+// // x = "John";  // Now x is a String
+
+// // You can use single or double quotes for Strings
+// // "" or ''
+
+// // You can also use decimals not more going back and forth with doubles and ints or float
+// // // With decimals:
+// // let x1 = 34.00;
+
+// // // Without decimals:
+// // let x2 = 34;
+
+// //Or if you want to get really precise with it you can do this 
+
+// // let y = 123e5;    // 12300000
+// // let z = 123e-5;   // 0.00123
+
+// // JavaScript BigInt
+
+// //So BigInts are Ints that can hold up to 64 numbers inside 
+
+// //let x = BigInt("123456789012345678901234567890");
+
+// // JavaScript Booleans
+// // Booleans can only have two values: true or false.
+
+// // Example
+// // let x = 5;
+// // let y = 5;
+// // let z = 6;
+// // (x == y)       // Returns true
+// // (x == z
+// // Boolean have recived no change they are still true or false
+
+// // JavaScript Objects
+// // JavaScript objects are written with curly braces {}.
+
+// // Object properties are written as name:value pairs, separated by commas.
+
+// // Example
+// // const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// // The typeof Operator
+// // You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+
+// // The typeof operator returns the type of a variable or an expression:
+
+// // Example
+// // typeof ""             // Returns "string"
+// // typeof "John"         // Returns "string"
+// // typeof "John Doe"     // Returns "string"
+
+// // typeof 0              // Returns "number"
+// // typeof 314            // Returns "number"
+// // typeof 3.14           // Returns "number"
+// // typeof (3)            // Returns "number"
+// // typeof (3 + 4)        // Returns "number"
+
+// // Undefined - Is closest to unknown 
+
+// // In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+
+// // let car;    // Value is undefined, type is undefined
+
+// // car = undefined;    // Value is undefined, type is undefined
+
+// // Empty Values
+
+// // An empty value has nothing to do with undefined.
+
+// // An empty string has both a legal value and a type.
+// // let car = "";    // The value is "", the typeof is "string"
+
+// //fuctions is the "method" for js 
+
+// // Function to compute the product of p1 and p2
+// // function myFunction(p1, p2) {
+// //     return p1 * p2;
+// //   }
+
+// // Function Return
+// // When JavaScript reaches a return statement, the function will stop executing.
+
+// // If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+
+// // Functions often compute a return value. The return value is "returned" back to the "caller":
+
+// // Function is called, the return value will end up in x
+// // let x = myFunction(4, 3);
+
+// // function myFunction(a, b) {
+// // // Function returns the product of a and b
+// //   return a * b;
+// // }
+
+// // The () Operator
+// // The () operator invokes (calls) the function:
+
+//  // Convert Fahrenheit to Celsius:
+
+// // function toCelsius(fahrenheit) {
+// //   return (5/9) * (fahrenheit-32);
+// // }
+
+// // let value = toCelsius(77);
+
+
+// // JavaScript Objects
+
+// //Using the new Keyword
+// // This example create a new JavaScript object using new Object(), and then adds 4 properties:
+
+// // Example
+// // // Create an Object
+// // const person = new Object();
+
+// // // Add Properties
+// // person.firstName = "John";
+// // person.lastName = "Doe";
+// // person.age = 50;
+// // person.eyeColor = "blue";
+
+// // JavaScript Object Properties
+// // An Object is an Unordered Collection of Properties
+// // Properties are the most important part of JavaScript objects.
+
+// // Properties can be changed, added, deleted, and some are read only.
+
+// // Accessing JavaScript Properties
+// // The syntax for accessing the property of an object is:
+
+// // // objectName.property
+// // let age = person.age;
+// // or
+
+// // //objectName["property"]
+// // let age = person["age"];
+// // or
+
+// // //objectName[expression]
+// // let age = person[x];
+// // Examples
+// // person.firstname + " is " + person.age + " years old.";
+// // person["firstname"] + " is " + person["age"] + " years old.";
+// // let x = "firstname";
+// // let y = "age";
+// // person[x] + " is " + person[y] + " years old.";
+// // Adding New Properties
+// // You can add new properties to an existing object by simply giving it a value:
+
+// // Example
+// // person.nationality = "English";
+// // Deleting Properties
+// // The delete keyword deletes a property from an object:
+
+// // Example
+// // const person = {
+// //   firstName: "John",
+// //   lastName: "Doe",
+// //   age: 50,
+// //   eyeColor: "blue"
+// // };
+
+// // delete person.age;
+// // or delete person["age"];
+
+// // Example
+// // const person = {
+// //   firstName: "John",
+// //   lastName: "Doe",
+// //   age: 50,
+// //   eyeColor: "blue"
+// // };
+
+// // delete person["age"];
+
+// // Nested Objects
+// // Property values in an object can be other objects:
+
+// // Example
+// // myObj = {
+// //   name:"John",
+// //   age:30,
+// //   myCars: {
+// //     car1:"Ford",
+// //     car2:"BMW",
+// //     car3:"Fiat"
+// //   }
+// // }
+
+// // You can access nested objects using the dot notation or the bracket notation:
+
+// // myObj.myCars.car2;
+// // myObj.myCars["car2"];
+// // myObj["myCars"]["car2"];
+// // let p1 = "myCars";
+// // let p2 = "car2";
+// // myObj[p1][p2];
+
+// // JavaScript Object Methods
+// // Object methods are actions that can be performed on objects.
+
+// // A method is a function definition stored as a property value.
+
+// // Property	    Value
+// // firstName	John
+// // lastName	    Doe
+// // age	        50
+// // eyeColor	    blue
+// // fullName	    function() {return this.firstName + " " + this.lastName;}
+
+// // const person = {
+// //     firstName: "John",
+// //     lastName: "Doe",
+// //     id: 5566,
+// //     fullName: function() {
+// //       return this.firstName + " " + this.lastName;
+// //     }
+// //   };
+
+// // In the example above, this refers to the person object:
+
+// // this.firstName means the firstName property of person.
+
+// // this.lastName means the lastName property of person.
+
+// // Accessing Object Methods
+// // You access an object method with the following syntax:
+
+// // objectName.methodName()
+// // If you invoke the fullName property with (), it will execute as a function:
+
+// //  name = person.fullName();
+
+// // If you access the fullName property without (), it will return the function definition:
+
+// // JavaScript Object Methods
+
+// // Object methods are actions that can be performed on objects.
+
+// // A method is a function definition stored as a property value.
+
+// // Property	Value
+// // firstName	John
+// // lastName	Doe
+// // age	50
+// // eyeColor	blue
+// // fullName	function() {return this.firstName + " " + this.lastName;}
+
+// // Example
+// // name = person.fullName;
+
+// // Adding a Method to an Object
+// // Adding a new method to an object is easy:
+
+// // person.name = function () {
+// //   return this.firstName + " " + this.lastName;
+// // }
+
+// // Using JavaScript Methods
+// // This example uses the JavaScript toUpperCase() method to convert a text to uppercase:
+
+// //  person.name = function () {
+// //   return (this.firstName + " " + this.lastName).toUpperCase();
+// // };
+
+
+// // How to Display JavaScript Objects?
+// // Displaying a JavaScript object will output [object Object].
+
+// // Example
+// // // Create an Object
+// // const person = {
+// //   name: "John",
+// //   age: 30,
+// //   city: "New York"
+// // };
+
+// // document.getElementById("demo").innerHTML = person;
+
+// // Some solutions to display JavaScript objects are:
+
+// // Displaying the Object Properties by name
+// // Displaying the Object Properties in a Loop
+// // Displaying the Object using Object.values()
+// // Displaying the Object using JSON.stringify()
+
+// // Displaying Object Properties
+// // The properties of an object can be displayed as a string:
+
+//  // // Create an Object
+// // const person = {
+// //   name: "John",
+// //   age: 30,
+// //   city: "New York"
+// // };
+
+// // // Display Properties
+// // document.getElementById("demo").innerHTML =
+// // person.name + "," + person.age + "," + person.city;
+
+
+// // Displaying Properties in a Loop
+// // The properties of an object can be collected in a loop:
+
+//  // // Create an Object
+// // const person = {
+// //   name: "John",
+// //   age: 30,
+// //   city: "New York"
+// // };
+
+// // // Build a Text
+// // let text = "";
+// // for (let x in person) {
+// //   text += person[x] + " ";
+// // };
+
+// // // Display the Text
+// // document.getElementById("demo").innerHTML = text;
+
+// // JavaScript Object Constructors
+
+// // Object Constructor Functions
+// // Sometimes we need to create many objects of the same type.
+
+// // To create an object type we use an object constructor function.
+
+// // It is considered good practice to name constructor functions with an upper-case first letter.
+
+// // Object Type Person
+// // function Person(first, last, age, eye) {
+// //   this.firstName = first;
+// //   this.lastName = last;
+// //   this.age = age;
+// //   this.eyeColor = eye;
+// // }
+
+// // Now we can use new Person() to create many new Person objects:
+
+//  // const myFather = new Person("John", "Doe", 50, "blue");
+// // const myMother = new Person("Sally", "Rally", 48, "green");
+// // const mySister = new Person("Anna", "Rally", 18, "green");
+
+// // const mySelf = new Person("Johnny", "Rally", 22, "green");
+
+// // Common HTML Events
+// // Here is a list of some common HTML events:
+
+// // Event	Description
+// // onchange	An HTML element has been changed
+// // onclick	The user clicks an HTML element
+// // onmouseover	The user moves the mouse over an HTML element
+// // onmouseout	The user moves the mouse away from an HTML element
+// // onkeydown	The user pushes a keyboard key
+// // onload	The browser has finished loading the page
+
+// // Basic String Methods
+// // Javascript strings are primitive and immutable: All string methods produce a new string without altering the original string.
+
+// // String length
+// // String charAt()
+// // String charCodeAt()
+// // String at()
+// // String [ ]
+// // String slice()
+// // String substring()
+// // String substr()
+// // See Also:
+// // String Search Methods
+// // String Templates
+// // String toUpperCase()
+// // String toLowerCase()
+// // String concat()
+// // String trim()
+// // String trimStart()
+// // String trimEnd()
+// // String padStart()
+// // String padEnd()
+// // String repeat()
+// // String replace()
+// // String replaceAll()
+// // String split()
+
+// // JavaScript String Length
+// // The length property returns the length of a string:
+
+// // Example
+// // let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// // let length = text.length;
+
+// // Extracting String Characters
+// // There are 4 methods for extracting string characters:
+
+// // The at(position) Method
+// // The charAt(position) Method
+// // The charCodeAt(position) Method
+// // Using property access [] like in arrays
+
+// // JavaScript String charAt()
+// // The charAt() method returns the character at a specified index (position) in a string:
+
+// // Example
+// // let text = "HELLO WORLD";
+// // let char = text.charAt(0);
+
+// // JavaScript String charCodeAt()
+// // The charCodeAt() method returns the code of the character at a specified index in a string:
+
+// // The method returns a UTF-16 code (an integer between 0 and 65535).
+
+// // Example
+// // let text = "HELLO WORLD";
+// // let char = text.charCodeAt(0);
+
+// // JavaScript String at()
+ 
+// // Examples
+// // Get the third letter of name:
+
+// // const name = "W3Schools";
+// // let letter = name.at(2);
+
+// // JavaScript String Search
+// // String Search Methods
+// // String indexOf()
+// // String lastIndexOf()
+// // String search()
+// // See Also:
+// // Basic String Methods
+// // String Templates
+
+// // JavaScript String indexOf()
+// // The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:
+
+// // let text = "Please locate where 'locate' occurs!";
+// // let index = text.indexOf("locate");
+
+// // Multiline Strings
+// // Template Strings allow multiline strings:
+
+//  // let text =
+// // `The quick
+// // brown fox
+// // jumps over
+// // the lazy dog`;
+
+// // Interpolation
+// // Template String provide an easy way to interpolate variables and expressions into strings.
+
+// // The method is called string interpolation.
+
+// // The syntax is:
+
+// // ${...}
+
+// // JavaScript Number Methods
+// // These number methods can be used on all JavaScript numbers:
+
+// // Method	Description
+// // toString()	Returns a number as a string
+// // toExponential()	Returns a number written in exponential notation
+// // toFixed()	Returns a number written with a number of decimals
+// // toPrecision()	Returns a number written with a specified length
+// // valueOf()	Returns a number as a number
+
+// // The toExponential() Method
+// // toExponential() returns a string, with a number rounded and written using exponential notation.
+
+// // A parameter defines the number of characters behind the decimal point:
+
+// // let x = 9.656;
+// // x.toExponential(2);
+// // x.toExponential(4);
+// // x.toExponential(6);
+
+// // The parameter is optional. If you don't specify it, JavaScript will not round the number.
+
+// // The toFixed() Method
+// // toFixed() returns a string, with the number written with a specified number of decimals:
+
+// // Example
+// // let x = 9.656;
+// // x.toFixed(0);
+// // x.toFixed(2);
+// // x.toFixed(4);
+// // x.toFixed(6);
+// // toFixed(2) is perfect for working with money.
+
+// // The toPrecision() Method
+// // toPrecision() returns a string, with a number written with a specified length:
+
+//  // let x = 9.656;
+// // x.toPrecision();
+// // x.toPrecision(2);
+// // x.toPrecision(4);
+// // x.toPrecision(6);
+
+// // The valueOf() Method
+// // valueOf() returns a number as a number.
+
+// //  let x = 123;
+// // x.valueOf();
+// // (123).valueOf();
+// // (100 + 23).valueOf();
+
+// // Converting Variables to Numbers
+// // There are 3 JavaScript methods that can be used to convert a variable to a number:
+
+// // Method	Description
+// // Number()	Returns a number converted from its argument.
+// // parseFloat()	Parses its argument and returns a floating point number
+// // parseInt()	Parses its argument and returns a whole number
+
+// // The Number() Method
+// // The Number() method can be used to convert JavaScript variables to numbers:
+
+// // Example
+// // Number(true);
+// // Number(false);
+// // Number("10");
+// // Number("  10");
+// // Number("10  ");
+// // Number(" 10  ");
+// // Number("10.33");
+// // Number("10,33");
+// // Number("10 33");
+// // Number("John");
+
+// // The Number() Method Used on Dates
+// // Number() can also convert a date to a number.
+
+//  // Number(new Date("1970-01-01"))
+
+//  //Fun fact -The Date() method returns the number of milliseconds since 1.1.1970.
+
+// //  Number Object Methods
+// //  These object methods belong to the Number object:
+ 
+// //  Method	Description
+// //  Number.isInteger()	Returns true if the argument is an integer
+// //  Number.isSafeInteger()	Returns true if the argument is a safe integer
+// //  Number.parseFloat()	Converts a string to a number
+// //  Number.parseInt()	Converts a string to a whole number
+
+// // The Number.isSafeInteger() Method
+// // A safe integer is an integer that can be exactly represented as a double precision number.
+
+// // The Number.isSafeInteger() method returns true if the argument is a safe integer.
+
+// // Number.isSafeInteger(10);
+// // Number.isSafeInteger(12345678901234567890);
+
+// // JavaScript Number Properties
+// // Property 	        Description
+// // EPSILON	            The difference between 1 and the smallest number > 1.
+// // MAX_VALUE	        The largest number possible in JavaScript
+// // MIN_VALUE	        The smallest number possible in JavaScript
+// // MAX_SAFE_INTEGER	    The maximum safe integer (253 - 1)
+// // MIN_SAFE_INTEGER	    The minimum safe integer -(253 - 1)
+// // POSITIVE_INFINITY	Infinity (returned on overflow)
+// // NEGATIVE_INFINITY	Negative infinity (returned on overflow)
+// // NaN	A "Not-a-Number" value
+
+// JavaScript Arrays
+
+// Converting an Array to a String
+// The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits.toString();
+// Result:
+
+// Banana,Orange,Apple,Mango
+
+// Changing an Array Element
+// This statement changes the value of the first element in cars:
+
+// cars[0] = "Opel";
+// Example
+// const cars = ["Saab", "Volvo", "BMW"];
+// cars[0] = "Opel";
+
+// Access the Full Array
+// With JavaScript, the full array can be accessed by referring to the array name:
+
+// Example
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.getElementById("demo").innerHTML = cars;
+
+// Arrays are Objects
+// Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+// But, JavaScript arrays are best described as arrays.
+
+// Arrays use numbers to access its "elements". In this example, person[0] returns John:
+
+// Array:
+// const person = ["John", "Doe", 46];
+
+// Array Properties and Methods
+// The real strength of JavaScript arrays are the built-in array properties and methods:
+
+// cars.length   // Returns the number of elements
+// cars.sort()   // Sorts the array
+ 
+// Looping Array Elements
+// One way to loop through an array, is using a for loop:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fLen = fruits.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruits[i] + "</li>";
+// }
+// text += "</ul>";
+// You can also use the Array.forEach() function:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// let text = "<ul>";
+// fruits.forEach(myFunction);
+// text += "</ul>";
+
+// function myFunction(value) {
+//   text += "<li>" + value + "</li>";
+// }
+// Adding Array Elements
+// The easiest way to add a new element to an array is using the push() method:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple"];
+// fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+// New element can also be added to an array using the length property:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple"];
+// fruits[fruits.length] = "Lemon";  // Adds "Lemon" to fruits
+
+// The Difference Between Arrays and Objects
+// In JavaScript, arrays use numbered indexes.  
+
+// In JavaScript, objects use named indexes.
+
+// Arrays are a special kind of objects, with numbered indexes.
+
+// When to Use Arrays. When to use Objects.
+// JavaScript does not support associative arrays.
+// You should use objects when you want the element names to be strings (text).
+// You should use arrays when you want the element names to be numbers.
+
+// Nested Arrays and Objects
+// Values in objects can be arrays, and values in arrays can be objects:
+
+// Example
+// const myObj = {
+//   name: "John",
+//   age: 30,
+//   cars: [
+//     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//     {name:"BMW", models:["320", "X3", "X5"]},
+//     {name:"Fiat", models:["500", "Panda"]}
+//   ]
+// }
+
+// To access arrays inside arrays, use a for-in loop for each array:
+
+// Example
+// for (let i in myObj.cars) {
+//   x += "<h1>" + myObj.cars[i].name + "</h1>";
+//   for (let j in myObj.cars[i].models) {
+//     x += myObj.cars[i].models[j];
+//   }
+// }
+
+// Popping and Pushing Arrays
+// When you work with arrays, it is easy to remove elements and add new elements.
+
+// This is what popping and pushing is:
+
+// Popping items out of an array, or pushing items into an array.
+
+// JavaScript Array pop()
+// The pop() method removes the last element from an array:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.pop();
+// The pop() method returns the value that was "popped out":
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fruit = fruits.pop();
+// JavaScript Array push()
+// The push() method adds a new element to an array (at the end):
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.push("Kiwi");
+// The push() method returns the new array length:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let length = fruits.push("Kiwi");
+
+// Changing Elements
+// Array elements are accessed using their index number:
+
+// Array indexes start with 0:
+
+// [0] is the first array element
+// [1] is the second
+// [2] is the third ...
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits[0] = "Kiwi";
+
+
+// JavaScript Array indexOf()
+// The indexOf() method searches an array for an element value and returns its position.
+
+// Note: The first item has position 0, the second item has position 1, and so on.
+
+// Example
+// Search an array for the item "Apple":
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.indexOf("Apple") + 1;
+
+// Syntax
+// array.indexOf(item, start)
+// item	Required. The item to search for.
+// start	Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the end.
+// Array.indexOf() returns -1 if the item is not found.
+
+// If the item is present more than once, it returns the position of the first occurrence.
+
+// JavaScript Sorting Arrays
+
+// Array Sort          Methods
+// Alphabetic          Sort
+// Array sort()
+// Array reverse()
+// Array toSorted()
+// Array toReversed()
+// Sorting Objects
+
+// Basic Methods
+// Search Methods
+// Iteration Methods	
+// Numeric Sort
+// Numeric Sort
+// Random Sort
+// Math.min()
+// Math.max()
+// Home made Min()
+// Home made Max()
+
+// Sorting an Array
+// The sort() method sorts an array alphabetically:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.sort();
+
+// JavaScript Array toSorted() Method
+// the toSorted() method as a safe way to sort an array without altering the original array.
+
+// The difference between toSorted() and sort() is that the first method creates a new array, keeping the original array unchanged, while the last method alters the original array.
+
+// Example
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// const sorted = months.toSorted();
+
+// JavaScript Array toReversed() Method
+// the toReversed() method as a safe way to reverse an array without altering the original array.
+
+// The difference between toReversed() and reverse() is that the first method creates a new array, keeping the original array unchanged, while the last method alters the original array.
+
+// Numeric Sort
+// By default, the sort() function sorts values as strings.
+
+// This works well for strings ("Apple" comes before "Banana").
+
+// If numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+
+// Because of this, the sort() method will produce incorrect result when sorting numbers.
+
+// You can fix this by providing a compare function:
+
+// Example
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function(a, b){return a - b});
+
+// The Fisher Yates Method
+// The points.sort() method in the example above is not accurate. It will favor some numbers over others.
+
+// The most popular correct method, is called the Fisher Yates shuffle, and was introduced in data science as early as 1938!
+
+// In JavaScript the method can be translated to this:
+
+// Example
+// const points = [40, 100, 1, 5, 25, 10];
+
+// for (let i = points.length -1; i > 0; i--) {
+//   let j = Math.floor(Math.random() * (i+1));
+//   let k = points[i];
+//   points[i] = points[j];
+//   points[j] = k;
+// }
+
+
+// Sorting Object Arrays
+// JavaScript arrays often contain objects:
+
+// Example
+// const cars = [
+//   {type:"Volvo", year:2016},
+//   {type:"Saab", year:2001},
+//   {type:"BMW", year:2010}
+// ];
+
+// JavaScript Array Iteration
+// Array Iteration Methods
+
+// Array iteration methods operate on every array item:
+
+// Array forEach
+// Array map()
+// Array flatMap()
+// Array filter()
+// Array reduce()
+// Array reduceRight()
+
+// See Also:
+// Basic Array Methods
+// Array Search Methods
+// Array Sort Methods	Array every()
+// Array some()
+// Array from()
+// Array keys()
+// Array entries()
+// Array with()
+// Array Spread (...)
+
+// JavaScript Array forEach()
+// The forEach() method calls a function (a callback function) once for each array element.
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let txt = "";
+// numbers.forEach(myFunction);
+
+// function myFunction(value, index, array) {
+//   txt += value + "<br>";
+// }
+
+// Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+// The example above uses only the value parameter. The example can be rewritten to:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let txt = "";
+// numbers.forEach(myFunction);
+
+// function myFunction(value) {
+//   txt += value + "<br>";
+// }
+
+// JavaScript Array map()
+// The map() method creates a new array by performing a function on each array element.
+
+// The map() method does not execute the function for array elements without values.
+
+// The map() method does not change the original array.
+
+// This example multiplies each array value by 2:
+
+// Example
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value * 2;
+// }
+
+
+// JavaScript Array flatMap()
+// ES2019 added the Array flatMap() method to JavaScript.
+
+// The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+
+// Example
+// const myArr = [1, 2, 3, 4, 5, 6];
+// const newArr = myArr.flatMap((x) => x * 2);
+
+// JavaScript Array filter()
+// The filter() method creates a new array with array elements that pass a test.
+
+// This example creates a new array from elements with a value larger than 18:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// const over18 = numbers.filter(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+
+// JavaScript Array reduce()
+// The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+// The reduce() method works from left-to-right in the array. See also reduceRight().
+
+// The reduce() method does not reduce the original array.
+
+// This example finds the sum of all numbers in an array:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// function myFunction(total, value, index, array) {
+//   return total + value;
+// }
+
+// The reduce() method does not reduce the original array.
+
+// This example finds the sum of all numbers in an array:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// function myFunction(total, value, index, array) {
+//   return total + value;
+// }
+// Note that the function takes 4 arguments:
+
+// The total (the initial value / previously returned value)
+// The item value
+// The item index
+// The array itself
+// The example above does not use the index and array parameters. It can be rewritten to:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction);
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// The reduce() method can accept an initial value:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduce(myFunction, 100);
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// JavaScript Array reduceRight()
+// The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.
+
+// The reduceRight() works from right-to-left in the array. See also reduce().
+
+// The reduceRight() method does not reduce the original array.
+
+// This example finds the sum of all numbers in an array:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduceRight(myFunction);
+
+// function myFunction(total, value, index, array) {
+//   return total + value;
+// }
+// Note that the function takes 4 arguments:
+
+// The total (the initial value / previously returned value)
+// The item value
+// The item index
+// The array itself
+// The example above does not use the index and array parameters. It can be rewritten to:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduceRight(myFunction);
+
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// JavaScript Array every()
+// The every() method checks if all array values pass a test.
+
+// This example checks if all array values are larger than 18:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let allOver18 = numbers.every(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+// Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+// When a callback function uses the first parameter only (value), the other parameters can be omitted:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let allOver18 = numbers.every(myFunction);
+
+// function myFunction(value) {
+//   return value > 18;
+// }
+// JavaScript Array some()
+// The some() method checks if some array values pass a test.
+
+// This example checks if some array values are larger than 18:
+
+// Example
+// const numbers = [45, 4, 9, 16, 25];
+// let someOver18 = numbers.some(myFunction);
+
+// function myFunction(value, index, array) {
+//   return value > 18;
+// }
+// Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+// JavaScript Array.from()
+// The Array.from() method returns an Array object from any object with a length property or any iterable object.
+
+// Example
+// Create an Array from a String:
+
+// Array.from("ABCDEFG");
+
+// JavaScript Array keys()
+// The Array.keys() method returns an Array Iterator object with the keys of an array.
+
+// Example
+// Create an Array Iterator object, containing the keys of the array:
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+
+// for (let x of keys) {
+//   text += x + "<br>";
+// }
+
+// JavaScript Array entries()
+// Example
+// Create an Array Iterator, and then iterate over the key/value pairs:
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const f = fruits.entries();
+
+// for (let x of f) {
+//   document.getElementById("demo").innerHTML += x;
+// }
+
+// The entries() method returns an Array Iterator object with key/value pairs:
+
+// [0, "Banana"]
+// [1, "Orange"]
+// [2, "Apple"]
+// [3, "Mango"]
+
+// The entries() method does not change the original array.
+
+// JavaScript Array with() Method
+// ES2023 added the Array with() method as a safe way to update elements in an array without altering the original array.
+
+// Example
+// const months = ["Januar", "Februar", "Mar", "April"];
+// const myMonths = months.with(2, "March");
+
+// JavaScript Array Spread (...)
+// The ... operator expands an iterable (like an array) into more elements:
+
+// Example
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May", "Jun"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
+
+// const year = [...q1, ...q2, ...q3, ...q4];
+
+// JavaScript Date Objects
+// JavaScript Date Objects let us work with dates:
+
+// Thu Nov 14 2024 12:40:10 GMT-0500 (Eastern Standard Time)
+
+// const d = new Date();
+// const d = new Date("2022-03-25");
+// Note
+// Date objects are static. The "clock" is not "running".
+
+// The computer clock is ticking, date objects are not.
+
+// JavaScript Date Output
+// By default, JavaScript will use the browser's time zone and display a date as a full text string:
+
+// Thu Nov 14 2024 12:40:10 GMT-0500 (Eastern Standard Time)
+
+// You will learn much more about how to display dates, later in this tutorial.
+
+// Creating Date Objects
+// Date objects are created with the new Date() constructor.
+
+// There are 9 ways to create a new date object:
+
+// new Date()
+// new Date(date string)
+
+// new Date(year,month)
+// new Date(year,month,day)
+// new Date(year,month,day,hours)
+// new Date(year,month,day,hours,minutes)
+// new Date(year,month,day,hours,minutes,seconds)
+// new Date(year,month,day,hours,minutes,seconds,ms)
+
+// new Date(milliseconds)
+// JavaScript new Date()
+// new Date() creates a date object with the current date and time:
+
+// Example
+// const d = new Date();
+// new Date(date string)
+// new Date(date string) creates a date object from a date string:
+
+// Examples
+// const d = new Date("October 13, 2014 11:13:00");
+// const d = new Date("2022-03-25");
+// Date string formats are described in the next chapter.
+
+// new Date(year, month, ...)
+// new Date(year, month, ...) creates a date object with a specified date and time.
+
+// 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+
+// Example
+// const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+// Note
+// JavaScript counts months from 0 to 11:
+
+// January = 0.
+
+// December = 11.
+
+// Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
+
+// Specifying:
+
+// const d = new Date(2018, 15, 24, 10, 33, 30);
+// Is the same as:
+
+// const d = new Date(2019, 3, 24, 10, 33, 30);
+// Specifying a day higher than max, will not result in an error but add the overflow to the next month:
+
+// Specifying:
+
+// const d = new Date(2018, 5, 35, 10, 33, 30);
+// Is the same as:
+
+// const d = new Date(2018, 6, 5, 10, 33, 30);
+// Using 6, 4, 3, or 2 Numbers
+// 6 numbers specify year, month, day, hour, minute, second:
+
+// Example
+// const d = new Date(2018, 11, 24, 10, 33, 30);
+// 5 numbers specify year, month, day, hour, and minute:
+
+// Example
+// const d = new Date(2018, 11, 24, 10, 33);
+// 4 numbers specify year, month, day, and hour:
+
+// Example
+// const d = new Date(2018, 11, 24, 10);
+// 3 numbers specify year, month, and day:
+
+// Example
+// const d = new Date(2018, 11, 24);
+// 2 numbers specify year and month:
+
+// Example
+// const d = new Date(2018, 11);
+// You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+
+// Example
+// const d = new Date(2018);
+// Previous Century
+// One and two digit years will be interpreted as 19xx:
+
+// Example
+// const d = new Date(99, 11, 24);
+// Example
+// const d = new Date(9, 11, 24);
+// JavaScript Stores Dates as Milliseconds
+// JavaScript stores dates as number of milliseconds since January 01, 1970.
+
+// Zero time is January 01, 1970 00:00:00 UTC.
+
+// One day (24 hours) is 86 400 000 milliseconds.
+
+// Now the time is: 1731606010806 milliseconds past January 01, 1970
+
+// new Date(milliseconds)
+// new Date(milliseconds) creates a new date object as milliseconds plus zero time:
+
+// Examples
+// 01 January 1970 plus 100 000 000 000 milliseconds is:
+
+// const d = new Date(100000000000);
+// January 01 1970 minus 100 000 000 000 milliseconds is:
+
+// const d = new Date(-100000000000);
+// January 01 1970 plus 24 hours is:
+
+// const d = new Date(24 * 60 * 60 * 1000);
+// // or
+// const d = new Date(86400000);
+// 01 January 1970 plus 0 milliseconds is:
+
+// const d = new Date(0);
+// Date Methods
+// When a date object is created, a number of methods allow you to operate on it.
+
+// Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of date objects, using either local time or UTC (universal, or GMT) time.
+
+// Date methods and time zones are covered in the next chapters.
+
+// Displaying Dates
+// JavaScript will (by default) output dates using the toString() method. This is a string representation of the date, including the time zone. The format is specified in the ECMAScript specification:
+
+// Example
+// Thu Nov 14 2024 12:40:10 GMT-0500 (Eastern Standard Time)
+// When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+
+// Example
+// const d = new Date();
+// d.toString();
+// The toDateString() method converts a date to a more readable format:
+
+// Example
+// const d = new Date();
+// d.toDateString();
+// The toUTCString() method converts a date to a string using the UTC standard:
+
+// Example
+// const d = new Date();
+// d.toUTCString();
+// The toISOString() method converts a date to a string using the ISO standard:
+
+ 
+// JavaScript Date Formats
+// JavaScript Date Input
+// There are generally 3 types of JavaScript date input formats:
+
+// Type	Example
+// ISO Date	"2015-03-25" (The International Standard)
+// Short Date	"03/25/2015"
+// Long Date	"Mar 25 2015" or "25 Mar 2015"
+ 
+// JavaScript Date Output
+// Independent of input format, JavaScript will (by default) output dates in full text string format:
+
+// Thu Nov 14 2024 12:42:09 GMT-0500 (Eastern Standard Time)
+// JavaScript ISO Dates
+// ISO 8601 is the international standard for the representation of dates and times.
+
+// The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:
+
+// Example (Complete date)
+// const d = new Date("2015-03-25");
+// The computed date will be relative to your time zone.
+// Depending on your time zone, the result above will vary between March 24 and March 25.
+
+// ISO Dates (Year and Month)
+// ISO dates can be written without specifying the day (YYYY-MM):
+
+// Example
+// const d = new Date("2015-03");
+// Time zones will vary the result above between February 28 and March 01.
+
+// ISO Dates (Only Year)
+// ISO dates can be written without month and day (YYYY):
+
+// Example
+// const d = new Date("2015");
+// Time zones will vary the result above between December 31 2014 and January 01 2015.
+
+// ISO Dates (Date-Time)
+// ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):
+
+// Example
+// const d = new Date("2015-03-25T12:00:00Z");
+// Date and time is separated with a capital T.
+
+// UTC time is defined with a capital letter Z.
+
+// If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead:
+
+// Example
+// const d = new Date("2015-03-25T12:00:00-06:30");
+
+// Time Zones
+// When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.
+
+// When getting a date, without specifying the time zone, the result is converted to the browser's time zone.
+
+// In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.
+
+// JavaScript Short Dates.
+// Short dates are written with an "MM/DD/YYYY" syntax like this:
+
+// Example
+// const d = new Date("03/25/2015");
+
+// JavaScript Long Dates.
+// Long dates are most often written with a "MMM DD YYYY" syntax like this:
+
+// Example
+// const d = new Date("Mar 25 2015");
+// Month and day can be in any order:
+
+// Example
+// const d = new Date("25 Mar 2015");
+// And, month can be written in full (January), or abbreviated (Jan):
+
+// Example
+// const d = new Date("January 25 2015");
+// Example
+// const d = new Date("Jan 25 2015");
+// Commas are ignored. Names are case insensitive:
+
+// Example
+// const d = new Date("JANUARY, 25, 2015");
+// Date Input - Parsing Dates
+// If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.
+
+// Date.parse() returns the number of milliseconds between the date and January 1, 1970:
+
+// Example
+// let msec = Date.parse("March 21, 2012");
+// You can then use the number of milliseconds to convert it to a date object:
+
+// Example
+// let msec = Date.parse("March 21, 2012");
+// const d = new Date(msec);
+
+// JavaScript Get Date Methods
+// The new Date() Constructor
+// In JavaScript, date objects are created with new Date().
+
+// new Date() returns a date object with the current date and time.
+
+// Get the Current Time
+// const date = new Date();
+// Date Get Methods
+// Method	Description
+// getFullYear()	Get year as a four digit number (yyyy)
+// getMonth()	Get month as a number (0-11)
+// getDate()	Get day as a number (1-31)
+// getDay()	Get weekday as a number (0-6)
+// getHours()	Get hour (0-23)
+// getMinutes()	Get minute (0-59)
+// getSeconds()	Get second (0-59)
+// getMilliseconds()	Get millisecond (0-999)
+// getTime()	Get time (milliseconds since January 1, 1970)
+
+// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// const d = new Date("2021-03-25");
+// let month = months[d.getMonth()];
+// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// const d = new Date();
+// let month = months[d.getMonth()];
+
+// The getDate() Method
+// The getDate() method returns the day of a date as a number (1-31):
+
+// Examples
+// const d = new Date("2021-03-25");
+// d.getDate();
+// const d = new Date();
+// d.getDate();
+// The getHours() Method
+// The getHours() method returns the hours of a date as a number (0-23):
+
+// Examples
+// const d = new Date("2021-03-25");
+// d.getHours();
+// const d = new Date();
+// d.getHours();
+// The getMinutes() Method
+// The getMinutes() method returns the minutes of a date as a number (0-59):
+
+// Examples
+// const d = new Date("2021-03-25");
+// d.getMinutes();
+// const d = new Date();
+// d.getMinutes();
+// The getSeconds() Method
+// The getSeconds() method returns the seconds of a date as a number (0-59):
+
+// Examples
+// const d = new Date("2021-03-25");
+// d.getSeconds();
+// const d = new Date();
+// d.getSeconds();
+// The getMilliseconds() Method
+// The getMilliseconds() method returns the milliseconds of a date as a number (0-999):
+
+// Examples
+// const d = new Date("2021-03-25");
+// d.getMilliseconds();
+// const d = new Date();
+// d.getMilliseconds();
+// The getDay() Method
+// The getDay() method returns the weekday of a date as a number (0-6).
+
+// Method	            Same As	            Description
+// getUTCDate()	        getDate()	        Returns the UTC date
+// getUTCFullYear()	    getFullYear()	    Returns the UTC year
+// getUTCMonth()	    getMonth()	        Returns the UTC month
+// getUTCDay()	        getDay()	        Returns the UTC day
+// getUTCHours()	    getHours()	        Returns the UTC hour
+// getUTCMinutes()	    getMinutes()	    Returns the UTC minutes
+// getUTCSeconds()	    getSeconds()	    Returns the UTC seconds
+// getUTCMilliseconds()	getMilliseconds()	Returns the UTC milliseconds
+// UTC methods use UTC time (Coordinated Universal Time).
+
+// UTC time is the same as GMT (Greenwich Mean Time).
+
+// The difference between Local time and UTC time can be up to 24 hours.
+
+// The getTimezoneOffset() Method
+// The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time:
+
+// Example
+// let diff = d.getTimezoneOffset();
+
+// JavaScript Set Date Methods
+// Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object.
+
+// Set Date Methods
+// Set Date methods are used for setting a part of a date:
+
+// Method	            Description
+// setDate()	        Set the day as a number (1-31)
+// setFullYear()	    Set the year (optionally month and day)
+// setHours()	        Set the hour (0-23)
+// setMilliseconds()	Set the milliseconds (0-999)
+// setMinutes()	    Set the minutes (0-59)
+// setMonth()	        Set the month (0-11)
+// setSeconds()	    Set the seconds (0-59)
+// setTime()	        Set the time (milliseconds since January 1, 1970)
+
+
+// The setFullYear() Method
+// The setFullYear() method sets the year of a date object. In this example to 2020:
+
+// Example
+// const d = new Date();
+// d.setFullYear(2020);
+// The setFullYear() method can optionally set month and day:
+
+// Example
+// const d = new Date();
+// d.setFullYear(2020, 11, 3);
+// The setMonth() Method
+// The setMonth() method sets the month of a date object (0-11):
+
+// Example
+// const d = new Date();
+// d.setMonth(11);
+// The setDate() Method
+// The setDate() method sets the day of a date object (1-31):
+
+// Example
+// const d = new Date();
+// d.setDate(15);
+// The setDate() method can also be used to add days to a date:
+
+// Example
+// const d = new Date();
+// d.setDate(d.getDate() + 50);
+// If adding days shifts the month or year, the changes are handled automatically by the Date object.
+
+// The setHours() Method
+// The setHours() method sets the hours of a date object (0-23):
+
+// Example
+// const d = new Date();
+// d.setHours(22);
+// The setMinutes() Method
+// The setMinutes() method sets the minutes of a date object (0-59):
+
+// Example
+// const d = new Date();
+// d.setMinutes(30);
+// The setSeconds() Method
+// The setSeconds() method sets the seconds of a date object (0-59):
+
+// Example
+// const d = new Date();
+// d.setSeconds(30);
+// Compare Dates
+// Dates can easily be compared.
+
+// The following example compares today's date with January 14, 2100:
+
+// Example
+// let text = "";
+// const today = new Date();
+// const someday = new Date();
+// someday.setFullYear(2100, 0, 14);
+
+// if (someday > today) {
+//   text = "Today is before January 14, 2100.";
+// } else {
+//   text = "Today is after January 14, 2100.";
+// }
+
+
+// Math.E        // returns Euler's number
+// Math.PI       // returns PI
+// Math.SQRT2    // returns the square root of 2
+// Math.SQRT1_2  // returns the square root of 1/2
+// Math.LN2      // returns the natural logarithm of 2
+// Math.LN10     // returns the natural logarithm of 10
+// Math.LOG2E    // returns base 2 logarithm of E
+// Math.LOG10E   // returns base 10 logarithm of E
+
+
+// Math Methods
+// The syntax for Math any methods is : Math.method(number)
+
+// Number to Integer
+// There are 4 common methods to round a number to an integer:
+
+// Math.round(x)	Returns x rounded to its nearest integer
+// Math.ceil(x)	Returns x rounded up to its nearest integer
+// Math.floor(x)	Returns x rounded down to its nearest integer
+// Math.trunc(x)	Returns the integer part of x (new in ES6)
+// Math.round()
+// Math.round(x) returns the nearest integer:
+
+// Examples
+// Math.round(4.6);
+// Math.round(4.5);
+// Math.round(4.4);
+
+// Math.ceil()
+// Math.ceil(x) returns the value of x rounded up to its nearest integer:
+
+// Example
+// Math.ceil(4.9);
+// Math.ceil(4.7);
+// Math.ceil(4.4);
+// Math.ceil(4.2);
+// Math.ceil(-4.2);
+// Math.floor()
+// Math.floor(x) returns the value of x rounded down to its nearest integer:
+
+// Example
+// Math.floor(4.9);
+// Math.floor(4.7);
+// Math.floor(4.4);
+// Math.floor(4.2);
+// Math.floor(-4.2);
+// Math.trunc()
+// Math.trunc(x) returns the integer part of x:
+
+// Example
+// Math.trunc(4.9);
+// Math.trunc(4.7);
+// Math.trunc(4.4);
+// Math.trunc(4.2);
+// Math.trunc(-4.2);
+// Math.sign()
+// Math.sign(x) returns if x is negative, null or positive:
+
+// Example
+// Math.sign(-4);
+// Math.sign(0);
+// Math.sign(4);
+
+// JavaScript Math Methods
+// Method	Description
+// abs(x)	Returns the absolute value of x
+// acos(x)	Returns the arccosine of x, in radians
+// acosh(x)	Returns the hyperbolic arccosine of x
+// asin(x)	Returns the arcsine of x, in radians
+// asinh(x)	Returns the hyperbolic arcsine of x
+// atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+// atan2(y, x)	Returns the arctangent of the quotient of its arguments
+// atanh(x)	Returns the hyperbolic arctangent of x
+// cbrt(x)	Returns the cubic root of x
+// ceil(x)	Returns x, rounded upwards to the nearest integer
+// cos(x)	Returns the cosine of x (x is in radians)
+// cosh(x)	Returns the hyperbolic cosine of x
+// exp(x)	Returns the value of Ex
+// floor(x)	Returns x, rounded downwards to the nearest integer
+// log(x)	Returns the natural logarithm (base E) of x
+// max(x, y, z, ..., n)	Returns the number with the highest value
+// min(x, y, z, ..., n)	Returns the number with the lowest value
+// pow(x, y)	Returns the value of x to the power of y
+// random()	Returns a random number between 0 and 1
+// round(x)	Rounds x to the nearest integer
+// sign(x)	Returns if x is negative, null or positive (-1, 0, 1)
+// sin(x)	Returns the sine of x (x is in radians)
+// sinh(x)	Returns the hyperbolic sine of x
+// sqrt(x)	Returns the square root of x
+// tan(x)	Returns the tangent of an angle
+// tanh(x)	Returns the hyperbolic tangent of a number
+// trunc(x)	Returns the integer part of a number (x)
+
+// Math.Random
+//Math.random();
+
+// JavaScript Random Integers
+// Math.random() used with Math.floor() can be used to return random integers.
+
+// There is no such thing as JavaScript integers.
+
+// We are talking about numbers with no decimals here.
+
+// Example
+// // Returns a random integer from 0 to 9:
+// Math.floor(Math.random() * 10);
+
+// JavaScript Booleans
+// A JavaScript Boolean represents one of two values: true or false.
+
+// Boolean Values
+// Very often, in programming, you will need a data type that can only have one of two values, like
+
+// YES / NO
+// ON / OFF
+// TRUE / FALSE
+// For this, JavaScript has a Boolean data type. It can only take the values true or false.
+
+// The Boolean() Function
+// You can use the Boolean() function to find out if an expression (or a variable) is true:
+
+// Example
+// Boolean(10 > 9)
+// Or even easier:
+
+// Example
+// (10 > 9)
+// 10 > 9
+// Comparisons and Conditions
+// The chapter JS Comparisons gives a full overview of comparison operators.
+
+// The chapter JS If Else gives a full overview of conditional statements.
+
+// Here are some examples:
+
+// Operator	Description	Example
+// ==	equal to	if (day == "Monday")
+// >	greater than	if (salary > 9000)
+// <	less than	if (age < 18)
+
+// Everything With a "Value" is True
+// Examples
+// 100
+
+// 3.14
+
+// -15
+
+// "Hello"
+
+// "false"
+
+// 7 + 1 + 3.14
+// Everything Without a "Value" is False
+// The Boolean value of 0 (zero) is false:
+
+// let x = 0;
+// Boolean(x);
+// The Boolean value of -0 (minus zero) is false:
+
+// let x = -0;
+// Boolean(x);
+// The Boolean value of "" (empty string) is false:
+
+// let x = "";
+// Boolean(x);
+// The Boolean value of undefined is false:
+
+// let x;
+// Boolean(x);
+// The Boolean value of null is false:
+
+// let x = null;
+// Boolean(x);
+// The Boolean value of false is (you guessed it) false:
+
+// let x = false;
+// Boolean(x);
+// The Boolean value of NaN is false:
+
+// let x = 10 / "Hallo";
+// Boolean(x);
+// JavaScript Booleans as Objects
+// Normally JavaScript booleans are primitive values created from literals:
+
+// let x = false;
+// But booleans can also be defined as objects with the keyword new:
+
+// let y = new Boolean(false);
+// Example
+// let x = false;
+// let y = new Boolean(false);
+
+// // typeof x returns boolean
+// // typeof y returns object
+
+
+// Do not create Boolean objects.
+
+// The new keyword complicates the code and slows down execution speed.
+
+// Boolean objects can produce unexpected results:
+
+// When using the == operator, x and y are equal:
+
+// let x = false;
+// let y = new Boolean(false);
+// When using the === operator, x and y are not equal:
+
+// let x = false;
+// let y = new Boolean(false);
+
+// JavaScript Comparison and Logical Operators
+// Comparison and Logical operators are used to test for true or false.
+
+// Comparison Operators
+// Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+// Given that x = 5, the table below explains the comparison operators:
+
+// Operator	Description	Comparing	Returns	Try it
+// ==	equal to	x == 8	false	
+// x == 5	true	
+// x == "5"	true	
+// ===	equal value and equal type	x === 5	true	
+// x === "5"	false	
+// !=	not equal	x != 8	true	
+// !==	not equal value or not equal type	x !== 5	false	
+// x !== "5"	true	
+// x !== 8	true	
+// >	greater than	x > 8	false	
+// <	less than	x < 8	true	
+// >=	greater than or equal to	x >= 8	false	
+// <=	less than or equal to	x <= 8	true	
+// How Can it be Used
+// Comparison operators can be used in conditional statements to compare values and take action depending on the result:
+
+// if (age < 18) text = "Too young to buy alcohol";
+// You will learn more about the use of conditional statements in the next chapter of this tutorial.
+
+// Logical Operators
+// Logical operators are used to determine the logic between variables or values.
+
+// Given that x = 6 and y = 3, the table below explains the logical operators:
+
+// Operator	Description	Example	Try it
+// &&	and	(x < 10 && y > 1) is true	
+// ||	or	(x == 5 || y == 5) is false	
+// !	not	!(x == y) is true	
+// Conditional (Ternary) Operator
+
+// JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+// Syntax
+// variablename = (condition) ? value1:value2 
+// Example
+// let voteable = (age < 18) ? "Too young":"Old enough";
+// If the variable age is a value below 18, the value of the variable voteable will be "Too young", otherwise the value of voteable will be "Old enough".
+
+// Comparing Different Types
+// Comparing data of different types may give unexpected results.
+
+// When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison. An empty string converts to 0. A non-numeric string converts to NaN which is always false.
+
+// Case	        Value
+// 2 < 12	    true	
+// 2 < "12"	    true	
+// 2 < "John"	false	
+// 2 > "John"	false	
+// 2 == "John"	false	
+// "2" < "12"	false	
+// "2" > "12"	true	
+// "2" == "12"	false
+
+// When comparing two strings, "2" will be greater than "12", because (alphabetically) 1 is less than 2.
+
+// To secure a proper result, variables should be converted to the proper type before comparison:
+
+// age = Number(age);
+// if (isNaN(age)) {
+//   voteable = "Input is not a number";
+// } else {
+//   voteable = (age < 18) ? "Too young" : "Old enough";
+// }
+
+// The Optional Chaining Operator (?.)
+// The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).
+
+// Example
+// // Create an object:
+// const car = {type:"Fiat", model:"500", color:"white"};
+// // Ask for car name:
+// document.getElementById("demo").innerHTML = car?.name;
+
+// JavaScript if, else, and else if
+// Conditional statements are used to perform different actions based on different conditions.
+
+// Conditional Statements
+// Very often when you write code, you want to perform different actions for different decisions.
+
+// You can use conditional statements in your code to do this.
+
+// In JavaScript we have the following conditional statements:
+
+// Use if to specify a block of code to be executed, if a specified condition is true
+// Use else to specify a block of code to be executed, if the same condition is false
+// Use else if to specify a new condition to test, if the first condition is false
+// Use switch to specify many alternative blocks of code to be executed
+
+// Example
+// Make a "Good day" greeting if the hour is less than 18:00:
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// }
+
+// The else Statement
+// Use the else statement to specify a block of code to be executed if the condition is false.
+
+// if (condition) {
+//   //  block of code to be executed if the condition is true
+// } else {
+//   //  block of code to be executed if the condition is false
+// }
+// Example
+// If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// The result of greeting will be:
+
+// Good day
+// The else if Statement
+// Use the else if statement to specify a new condition if the first condition is false.
+
+// Syntax
+// if (condition1) {
+//   //  block of code to be executed if condition1 is true
+// } else if (condition2) {
+//   //  block of code to be executed if the condition1 is false and condition2 is true
+// } else {
+//   //  block of code to be executed if the condition1 is false and condition2 is false
+// }
+// Example
+// If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// The result of greeting will be:
+
+// Good day
+
+// JavaScript Switch Statement
+// The switch statement is used to perform different actions based on different conditions.
+
+// The JavaScript Switch Statement
+// Use the switch statement to select one of many code blocks to be executed.
+
+// Syntax
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
+// This is how it works:
+
+// The switch expression is evaluated once.
+// The value of the expression is compared with the values of each case.
+// If there is a match, the associated block of code is executed.
+// If there is no match, the default code block is executed.
+
+// The getDay() method returns the weekday as a number between 0 and 6.
+
+// (Sunday=0, Monday=1, Tuesday=2 ..)
+
+// This example uses the weekday number to calculate the weekday name:
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//      day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+// The result of day will be:
+
+// Thursday
+
+// The default Keyword
+// The default keyword specifies the code to run if there is no case match:
+// Example
+// The getDay() method returns the weekday as a number between 0 and 6.
+
+// If today is neither Saturday (6) nor Sunday (0), write a default message:
+
+// switch (new Date().getDay()) {
+//   case 6:
+//     text = "Today is Saturday";
+//     break;
+//   case 0:
+//     text = "Today is Sunday";
+//     break;
+//   default:
+//     text = "Looking forward to the Weekend";
+// }
+// The result of text will be:
+
+// Looking forward to the Weekend
+
+// JavaScript Loops
+// Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+// Often this is the case when working with arrays:
+
+// Instead of writing:
+// text += cars[0] + "<br>";
+// text += cars[1] + "<br>";
+// text += cars[2] + "<br>";
+// text += cars[3] + "<br>";
+// text += cars[4] + "<br>";
+// text += cars[5] + "<br>";
+// You can write:
+// for (let i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// Different Kinds of Loops
+// JavaScript supports different kinds of loops:
+
+// for - loops through a block of code a number of times
+// for/in - loops through the properties of an object
+// for/of - loops through the values of an iterable object
+// while - loops through a block of code while a specified condition is true
+// do/while - also loops through a block of code while a specified condition is true
+// The For Loop
+// The for statement creates a loop with 3 optional expressions:
+
+// for (expression 1; expression 2; expression 3) {
+//   // code block to be executed
+// }
+// Expression 1 is executed (one time) before the execution of the code block.
+
+// Expression 2 defines the condition for executing the code block.
+
+// Expression 3 is executed (every time) after the code block has been executed.
+
+// Example
+// for (let i = 0; i < 5; i++) {
+//   text += "The number is " + i + "<br>";
+// }
+// From the example above, you can read:
+
+// Expression 1 sets a variable before the loop starts (let i = 0).
+
+// Expression 2 defines the condition for the loop to run (i must be less than 5).
+
+// Expression 3 increases a value (i++) each time the code block in the loop has been executed.
+
+// Expression 1
+// Normally you will use expression 1 to initialize the variable used in the loop (let i = 0).
+
+// This is not always the case. JavaScript doesn't care. Expression 1 is optional.
+
+// You can initiate many values in expression 1 (separated by comma):
+
+// Example
+// for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+// And you can omit expression 1 (like when your values are set before the loop starts):
+
+// Example
+// let i = 2;
+// let len = cars.length;
+// let text = "";
+// for (; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// Loop Scope
+// Using var in a loop:
+
+// Example
+// var i = 5;
+
+// for (var i = 0; i < 10; i++) {
+//   // some code
+// }
+
+// Here i is 10
+
+// Using let in a loop:
+
+// Example
+// let i = 5;
+
+// for (let i = 0; i < 10; i++) {
+//   // some code
+// }
+
+// // Here i is 5
+// The For Of Loop
+// The JavaScript for of statement loops through the values of an iterable object.
+
+// It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+
+// Syntax
+// for (variable of iterable) {
+//   // code block to be executed
+// }
+// variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+
+// iterable - An object that has iterable properties.
+
+// The While Loop
+// The while loop loops through a block of code as long as a specified condition is true.
+
+// Syntax
+// while (condition) {
+//   // code block to be executed
+// }
+
+// The break statement "jumps out" of a loop.
+
+// The continue statement "jumps over" one iteration in the loop.
+
+// The Break Statement
+// You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch() statement.
+
+// The break statement can also be used to jump out of a loop:
+
+// Example
+// for (let i = 0; i < 10; i++) {
+//   if (i === 3) { break; }
+//   text += "The number is " + i + "<br>";
+// }
+
