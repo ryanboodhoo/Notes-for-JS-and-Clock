@@ -16,10 +16,17 @@ html, body, h1, h2, h3, p, ul, ol, li, a{
   width: 20%;
 }
 
-#header .nav-links a{
+/* #header .nav-links a{
   width: 500px;
   margin: 0 auto;
   padding: 20px 0px 40px 0px;
+} */
+
+
+#header .nav-links li {
+  width: 100%;
+  display: inline;
+  padding: 10px;
 }
 
 
@@ -41,3 +48,11 @@ ul li {
 /* .city{
   background-color: pink;
 } */
+
+
+#pics img {
+  margin-top: 40px;
+  width: 33%;
+  float: left;
+  padding: 1px;
+}
