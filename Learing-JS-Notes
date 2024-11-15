@@ -872,3 +872,51 @@
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits[0] = "Kiwi";
 
+
+// JavaScript Array indexOf()
+// The indexOf() method searches an array for an element value and returns its position.
+
+// Note: The first item has position 0, the second item has position 1, and so on.
+
+// Example
+// Search an array for the item "Apple":
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.indexOf("Apple") + 1;
+
+// Syntax
+// array.indexOf(item, start)
+// item	Required. The item to search for.
+// start	Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the end.
+// Array.indexOf() returns -1 if the item is not found.
+
+// If the item is present more than once, it returns the position of the first occurrence.
+
+// JavaScript Sorting Arrays
+
+// Array Sort          Methods
+// Alphabetic          Sort
+// Array sort()
+// Array reverse()
+// Array toSorted()
+// Array toReversed()
+// Sorting Objects
+
+// Basic Methods
+// Search Methods
+// Iteration Methods	
+// Numeric Sort
+// Numeric Sort
+// Random Sort
+// Math.min()
+// Math.max()
+// Home made Min()
+// Home made Max()
+
+// Sorting an Array
+// The sort() method sorts an array alphabetically:
+
+// Example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.sort();
+
