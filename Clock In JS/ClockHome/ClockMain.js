@@ -7,37 +7,29 @@ function clock() {
 
     const today = new Date();
 
-    // Update the date
-    document.getElementById('Date').innerHTML = 
+     document.getElementById('Date').innerHTML = 
         dayNames[today.getDay()] + " " + 
         today.getDate() + " " + 
         monthNames[today.getMonth()] + " " +
         today.getFullYear();
 
-    // Get time components
-    let h = today.getHours();
+     let h = today.getHours();
     const m = today.getMinutes();
     const s = today.getSeconds();
 
-    // Determine AM or PM
-    const ampm = h >= 12 ? "PM" : "AM";
+     const ampm = h >= 12 ? "PM" : "AM";
 
-    // Convert to 12-hour format
-    h = h % 12;
-    h = h === 0 ? 12 : h; // Handle midnight (0 hours) as 12
-
-    // Add leading zeros to minutes and seconds
-    const formattedHours = h < 10 ? "0" + h : h;
+     h = h % 12;
+    h = h === 0 ? 12 : h;  
+     const formattedHours = h < 10 ? "0" + h : h;
     const formattedMinutes = m < 10 ? "0" + m : m;
     const formattedSeconds = s < 10 ? "0" + s : s;
 
-    // Update the clock
-    document.getElementById('hours').innerHTML = formattedHours;
+     document.getElementById('hours').innerHTML = formattedHours;
     document.getElementById('min').innerHTML = formattedMinutes;
     document.getElementById('sec').innerHTML = formattedSeconds;
 
-    // Display AM or PM
-    const ampmElement = document.getElementById('ampm');
+     const ampmElement = document.getElementById('ampm');
     if (ampmElement) {
         ampmElement.innerHTML = ampm;
     } else {
@@ -48,5 +40,4 @@ function clock() {
     }
 }
 
-// Run the clock function every 400 milliseconds
-setInterval(clock, 400);
+ setInterval(clock, 400);
